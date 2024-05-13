@@ -2,7 +2,7 @@
 
 MediQAlpaca is a specialized Large Language Model (LLM) fine-tuned from the Alpaca model for biomedical question-answering tasks. It was used for assessesing the impact of domain-specific fine-tuning on LLM performance using the PubMedQA dataset and investigates how this enhanced model can support healthcare professionals in their roles. The findings from the creation of the model suggest that domain-specific fine-tuning not only boosts the model's applicability in specialized areas but also enhances medical professionals' decision-making efficiency, information retrieval and educational efforts. Future research should seek to broaden the model's functionality to accommodate multilingual and multimodal inputs, thereby improving its global utility in healthcare. Efforts should also be made to integrate the model seamlessly into clinical workflows and to develop an automated update mechanism. Additional recommendations delve into Explainable AI, the experimentation with larger models, and the performance of cost-effectiveness analyses to ensure these AI tools are economically viable, supporting their practical application in healthcare environments and enhancing operational efficiency.
 
-This repository contains code that was used to create MediQAlpaca. The model was finetuned on Colab using a V100 GPU with the whole process taking 6:33:08h and costing less than $4
+This repository contains code that was used to create MediQAlpaca. The model was finetuned on Colab using a V100 GPU with the whole process taking 6:33:08h and costing less than $4.
 
 ### Local Setup
 
