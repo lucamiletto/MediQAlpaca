@@ -84,20 +84,6 @@ Evaluation is performed in (`evaluation.jpynb`) and MediQAlpaca is compared agai
 | BLEU   | 0.0476        | **0.059**   |
 
 
-### Notes
-
-- We can likely improve our model performance significantly if we had a larger dataset.
-- Work done here should be takes as a baseline for understanding costs and complexities of finetuning LLMs when significative resource costraints exist
-- Users with multiple GPUs should take a look [here](https://github.com/tloen/alpaca-lora/issues/8#issuecomment-1477490259).
-
-### Resources
-
-- [alpaca-lora](https://github.com/tloen/alpaca-lora), code for finetuning llama based models using LoRA
-- [Colab_For_Alpca_Lora](https://github.com/TianyiPeng/Colab_for_Alpaca_Lora), code for finetuning llama based models using colab
-- [PubMedQA](https://github.com/pubmedqa/pubmedqa)
-- [alpaca-native](<https://huggingface.co/chavinlo/alpaca-native>) a replication using the original Alpaca code
-
-
 ### Example outputs
 
 **Instruction**: Can post-RT neck dissection be omitted for patients with head-and-neck cancer who have a negative PET scan after definitive radiation therapy?
@@ -127,3 +113,18 @@ Evaluation is performed in (`evaluation.jpynb`) and MediQAlpaca is compared agai
 **alpaca-native**: No specific answer provided.
 
 **PubMedQA**: Surgical and catheter-based approaches improve outcomes, require risk stratification and exit angiography.
+
+### Notes
+
+- We can likely improve our model performance significantly if we had a larger dataset.
+- Work done here should be takes as a baseline for understanding costs and complexities of finetuning LLMs when significative resource costraints exist
+- Users with multiple GPUs should take a look [here](https://github.com/tloen/alpaca-lora/issues/8#issuecomment-1477490259).
+
+### Resources
+
+- [alpaca-lora](https://github.com/tloen/alpaca-lora), code for finetuning llama based models using LoRA
+- [Colab_For_Alpca_Lora](https://github.com/TianyiPeng/Colab_for_Alpaca_Lora), code for finetuning llama based models using colab
+- [PubMedQA](https://github.com/pubmedqa/pubmedqa)
+- [alpaca-native](<https://huggingface.co/chavinlo/alpaca-native>) a replication using the original Alpaca code
+
+
