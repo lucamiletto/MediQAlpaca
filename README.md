@@ -123,8 +123,6 @@ Evaluation is performed in (`evaluation.jpynb`) and MediQAlpaca is compared agai
 
 - We can likely improve our model performance significantly if we had a larger dataset.
 - Work done here should be takes as a baseline for understanding costs and complexities of finetuning LLMs when significative resource costraints exist
-- Users with multiple GPUs should take a look [here](https://github.com/tloen/alpaca-lora/issues/8#issuecomment-1477490259).
-
 
 ### Resources
 
