@@ -131,8 +131,9 @@ Evaluation is performed in `evaluation.jpynb` and MediQAlpaca is compared agains
 
 ### Authors
 
-Luca Boscolo Camiletto
+Luca Boscolo Camiletto      
 Ivana Jasna Caltagirone
+
 
 Please cite if you use the material from this repository:
 ```
