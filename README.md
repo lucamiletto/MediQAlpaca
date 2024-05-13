@@ -77,8 +77,7 @@ python finetune.py \
 - [alpaca-lora](https://github.com/tloen/alpaca-lora), code for finetuning llama based models using LoRA
 - [Colab_For_Alpca_Lora](https://github.com/TianyiPeng/Colab_for_Alpaca_Lora), code for finetuning llama based models using colab
 - [PubMedQA](https://github.com/pubmedqa/pubmedqa)
-- Base Model:
- - [alpaca-native](<https://huggingface.co/chavinlo/alpaca-native>) a replication using the original Alpaca code
+- [alpaca-native](<https://huggingface.co/chavinlo/alpaca-native>) a replication using the original Alpaca code
 
 
 ### Example outputs
