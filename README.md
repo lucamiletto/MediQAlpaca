@@ -14,7 +14,8 @@ Install dependencies
 
 ### Dataset Preprocessing
 
-
+Preprocessing of the PubMedQA dataset portion is done using (`preprocessing.py`).
+PubMedQA is made to train classificaiton into yes/no/maybe, input and answers and context had to be extracted.
 
 ### Training (`finetune.py`)
 
@@ -53,11 +54,34 @@ We can also tweak our hyperparameters:
 
 ### Inference and Evaluation
 
-Inference was done using the (`inference.py`). 
+Inference was done using the (`inference.jpynb`). 
 The dedicated script aided in aswering the (`test_data_s.json`) test set and processed the results in a manner such that metrics and graphical evaluation of the model results could be conduted.
+Evaluation is performed in (`evaluation.jpynb`) and MediQAlpaca is compared against the base model.
 
-### Model Performance
+##### ROUGE Scores for Native Alpaca
 
+| Scores    | Precision | Recall  | F-score |
+|-----------|-----------|---------|---------|
+| ROUGE 1   | 0.2470    | 0.2401  | 0.2146  |
+| ROUGE 2   | 0.0884    | 0.0808  | 0.0735  |
+| ROUGE L   | 0.1798    | 0.1704  | 0.1533  |
+| ROUGE LSum| 0.1800    | 0.1704  | 0.1533  |
+
+##### ROUGE Scores for MediQAlpaca
+
+| Scores    | Precision | Recall  | F-score |
+|-----------|-----------|---------|---------|
+| ROUGE 1   | 0.4601    | 0.2855  | 0.3273  |
+| ROUGE 2   | 0.1791    | 0.1084  | 0.1253  |
+| ROUGE L   | 0.3437    | 0.2141  | 0.2448  |
+| ROUGE LSum| 0.3436    | 0.2139  | 0.2446  |
+
+##### METEOR and BLEU Scores
+
+| Score  | Alpaca-Native | MediQAlpaca |
+|--------|---------------|-------------|
+| METEOR | 0.1846        | **0.2384**  |
+| BLEU   | 0.0476        | **0.059**   |
 
 
 ### Notes
