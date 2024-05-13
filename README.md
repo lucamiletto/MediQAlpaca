@@ -1,27 +1,8 @@
 # 🦙🩺 MediQAlpaca
 
-
+This repository contains code for reproducing MediQAlpaca a question answering generative LLM for healthcare professionals
 
 The model was finetuned with the following configuration
-
-  ```bash
-!python finetune.py \
-    --base_model 'alpaca-native' \
-    --data_path 'PubMedQA/10_percent_train_dataset.json' \
-    --output_dir './lora-alpaca' \
-    --batch_size 128 \
-    --micro_batch_size 16 \
-    --num_epochs 3 \
-    --learning_rate 1e-4 \
-    --cutoff_len 512 \
-    --val_set_size 4500 \
-    --lora_r 8 \
-    --lora_alpha 16 \
-    --lora_dropout 0.1 \
-    --lora_target_modules '[q_proj,v_proj]' \
-    --train_on_inputs \
-    --group_by_length;
-   ```
 
 - 🤗 **Try the pretrained model out [here](https://huggingface.co/spaces/tloen/alpaca-lora), courtesy of a GPU grant from Huggingface!**
 - Users have created a Discord server for discussion and support [here](https://discord.gg/prbq284xX5)
@@ -57,34 +38,34 @@ PRs adapting this code to support larger models are always welcome.
 Example usage:
 
 ```bash
-python finetune.py \
-    --base_model 'decapoda-research/llama-7b-hf' \
-    --data_path 'yahma/alpaca-cleaned' \
-    --output_dir './lora-alpaca'
+!python finetune.py \
+    --base_model 'alpaca-native' \
+    --data_path 'PubMedQA/10_percent_train_dataset.json' \
+    --output_dir './lora-alpaca' \
 ```
 
 We can also tweak our hyperparameters:
 
-```bash
-python finetune.py \
-    --base_model 'decapoda-research/llama-7b-hf' \
-    --data_path 'yahma/alpaca-cleaned' \
+  ```bash
+!python finetune.py \
+    --base_model 'alpaca-native' \
+    --data_path 'PubMedQA/10_percent_train_dataset.json' \
     --output_dir './lora-alpaca' \
     --batch_size 128 \
-    --micro_batch_size 4 \
+    --micro_batch_size 16 \
     --num_epochs 3 \
     --learning_rate 1e-4 \
     --cutoff_len 512 \
-    --val_set_size 2000 \
+    --val_set_size 4500 \
     --lora_r 8 \
     --lora_alpha 16 \
-    --lora_dropout 0.05 \
+    --lora_dropout 0.1 \
     --lora_target_modules '[q_proj,v_proj]' \
     --train_on_inputs \
-    --group_by_length
-```
+    --group_by_length;
+   ```
 
-### Inference (`generate.py`)
+### Inference
 
 This file reads the foundation model from the Hugging Face model hub and the LoRA weights from `tloen/alpaca-lora-7b`, and runs a Gradio interface for inference on a specified input. Users should treat this as example code for the use of the model, and modify it as needed.
 
