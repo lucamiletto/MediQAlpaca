@@ -1,4 +1,27 @@
-# 🦙🌲🤏 Alpaca-LoRA
+# 🦙🩺 MediQAlpaca
+
+
+
+The model was finetuned with the following configuration
+
+  ```bash
+!python finetune.py \
+    --base_model 'alpaca-native' \
+    --data_path 'PubMedQA/10_percent_train_dataset.json' \
+    --output_dir './lora-alpaca' \
+    --batch_size 128 \
+    --micro_batch_size 16 \
+    --num_epochs 3 \
+    --learning_rate 1e-4 \
+    --cutoff_len 512 \
+    --val_set_size 4500 \
+    --lora_r 8 \
+    --lora_alpha 16 \
+    --lora_dropout 0.1 \
+    --lora_target_modules '[q_proj,v_proj]' \
+    --train_on_inputs \
+    --group_by_length;
+   ```
 
 - 🤗 **Try the pretrained model out [here](https://huggingface.co/spaces/tloen/alpaca-lora), courtesy of a GPU grant from Huggingface!**
 - Users have created a Discord server for discussion and support [here](https://discord.gg/prbq284xX5)
