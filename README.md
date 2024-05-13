@@ -4,6 +4,7 @@ MediQAlpaca is a specialized Large Language Model (LLM) fine-tuned from the Alpa
 
 This repository contains code that was used to create MediQAlpaca. The model was finetuned on Colab using a V100 GPU with the whole process taking 6:33:08h and costing less than $4.
 
+
 ### Local Setup
 
 Install dependencies
@@ -16,6 +17,7 @@ Install dependencies
 
 Preprocessing of the PubMedQA dataset portion is done using (`preprocessing.py`).
 PubMedQA is made to train classificaiton into yes/no/maybe, input and answers and context had to be extracted.
+
 
 ### Training (`finetune.py`)
 
@@ -52,6 +54,7 @@ We can also tweak our hyperparameters:
     --group_by_length;
    ```
 
+
 ### Inference and Evaluation
 
 Inference was done using the (`inference.jpynb`). 
@@ -84,6 +87,7 @@ Evaluation is performed in (`evaluation.jpynb`) and MediQAlpaca is compared agai
 | BLEU   | 0.0476        | **0.059**   |
 
 
+
 ### Example outputs
 
 **Instruction**: Can post-RT neck dissection be omitted for patients with head-and-neck cancer who have a negative PET scan after definitive radiation therapy?
@@ -114,11 +118,13 @@ Evaluation is performed in (`evaluation.jpynb`) and MediQAlpaca is compared agai
 
 **PubMedQA**: Surgical and catheter-based approaches improve outcomes, require risk stratification and exit angiography.
 
+
 ### Notes
 
 - We can likely improve our model performance significantly if we had a larger dataset.
 - Work done here should be takes as a baseline for understanding costs and complexities of finetuning LLMs when significative resource costraints exist
 - Users with multiple GPUs should take a look [here](https://github.com/tloen/alpaca-lora/issues/8#issuecomment-1477490259).
+
 
 ### Resources
 
