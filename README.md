@@ -6,15 +6,19 @@ This repository contains code that was used to create MediQAlpaca. The model was
 
 ### Local Setup
 
-1. Install dependencies
+Install dependencies
 
    ```bash
    pip install -r requirements.txt
    ```
 
+### Dataset Preprocessing
+
+
+
 ### Training (`finetune.py`)
 
-This file contains a straightforward application of PEFT to the Alpaca model,
+This file contains a straightforward application of PEFT to the Alpaca model, 
 as well as some code related to prompt construction and tokenization.
 
 Example usage:
@@ -49,7 +53,8 @@ We can also tweak our hyperparameters:
 
 ### Inference and Evaluation
 
-Inference was done using the (`inference.py`). The dedicated script aided in aswering the  test set and processed the results in a manner such that metrics and graphical evaluation of the model results could be conduted
+Inference was done using the (`inference.py`). 
+The dedicated script aided in aswering the (`test_data_s.json`) test set and processed the results in a manner such that metrics and graphical evaluation of the model results could be conduted.
 
 ### Model Performance
 
