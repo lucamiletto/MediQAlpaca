@@ -104,8 +104,8 @@ python finetune.py \
 
 **Instruction**: Pulmonary atresia with VSD and multifocal pulmonary blood supply: does an intensive interventional approach improve the outcome?
 
-**MediQAlpaca**: No specific answer provided.
+**MediQAlpaca**: Intensive transcatheter approach improves pulmonary vascular growth and decreases Nakata index.
 
-**alpaca-native**: Intensive transcatheter approach improves pulmonary vascular growth and decreases Nakata index.
+**alpaca-native**: No specific answer provided.
 
 **PubMedQA**: Surgical and catheter-based approaches improve outcomes, require risk stratification and exit angiography.
