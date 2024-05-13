@@ -15,7 +15,7 @@ Install dependencies
 
 ### Dataset Preprocessing
 
-Preprocessing of the PubMedQA dataset portion is done using (`preprocessing.py`).
+Preprocessing of the PubMedQA dataset portion is done using `preprocessing.py`.
 PubMedQA is made to train classificaiton into yes/no/maybe, input and answers and context had to be extracted.
 
 
@@ -57,9 +57,9 @@ We can also tweak our hyperparameters:
 
 ### Inference and Evaluation
 
-Inference was done using the (`inference.jpynb`). 
-The dedicated script aided in aswering the (`test_data_s.json`) test set and processed the results in a manner such that metrics and graphical evaluation of the model results could be conduted.
-Evaluation is performed in (`evaluation.jpynb`) and MediQAlpaca is compared against the base model.
+Inference was done using the `inference.jpynb`. 
+The dedicated script aided in aswering the `test_data_s.json` test set and processed the results in a manner such that metrics and graphical evaluation of the model results could be conduted.
+Evaluation is performed in `evaluation.jpynb` and MediQAlpaca is compared against the base model.
 
 ##### ROUGE Scores for Native Alpaca
 
