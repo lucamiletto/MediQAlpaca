@@ -86,8 +86,6 @@ Evaluation is performed in (`evaluation.jpynb`) and MediQAlpaca is compared agai
 | METEOR | 0.1846        | **0.2384**  |
 | BLEU   | 0.0476        | **0.059**   |
 
-
-
 ### Example outputs
 
 **Instruction**: Can post-RT neck dissection be omitted for patients with head-and-neck cancer who have a negative PET scan after definitive radiation therapy?
