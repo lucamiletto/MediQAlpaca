@@ -47,11 +47,11 @@ We can also tweak our hyperparameters:
     --group_by_length;
    ```
 
-### Inference
+### Inference and Evaluation
 
-This file reads the foundation model from the Hugging Face model hub and the LoRA weights from `tloen/alpaca-lora-7b`, and runs a Gradio interface for inference on a specified input. Users should treat this as example code for the use of the model, and modify it as needed.
+Inference was done using the (`inference.py`). The dedicated script aided in aswering the  test set and processed the results in a manner such that metrics and graphical evaluation of the model results could be conduted
 
-### Weights
+### Model Performance
 
 
 
