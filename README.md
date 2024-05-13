@@ -37,7 +37,7 @@ We can also tweak our hyperparameters:
 
   ```bash
 !python finetune.py \
-    --base_model 'alpaca-native' \
+    --base_model 'chavinlo/alpaca-native' \
     --data_path 'PubMedQA/10_percent_train_dataset.json' \
     --output_dir './lora-alpaca' \
     --batch_size 128 \
