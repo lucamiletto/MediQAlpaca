@@ -129,4 +129,18 @@ Evaluation is performed in `evaluation.jpynb` and MediQAlpaca is compared agains
 - [PubMedQA](https://github.com/pubmedqa/pubmedqa)
 - [alpaca-native](<https://huggingface.co/chavinlo/alpaca-native>) a replication using the original Alpaca code
 
+### Authors
+
+Luca Boscolo Camiletto
+Ivana Jasna Caltagirone
+
+Please cite if you use the material from this repository:
+```
+@masterthesis{sickluke,
+  title={Enhancing Biomedical Decision-Making: The Role of Fine-Tuned Language Models},
+  author={Luca Boscolo Camiletto and Ivana Jasna Caltagirone},
+  school={Copenhagen Business School},
+  year={2024}
+}
+```
 
