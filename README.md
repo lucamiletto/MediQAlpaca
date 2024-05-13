@@ -83,8 +83,8 @@ Evaluation is performed in (`evaluation.jpynb`) and MediQAlpaca is compared agai
 
 | Score  | Alpaca-Native | MediQAlpaca |
 |--------|---------------|-------------|
-| METEOR | 0.1846        | **0.2384**  |
-| BLEU   | 0.0476        | **0.059**   |
+| METEOR | 0.1846        | 0.2384      |
+| BLEU   | 0.0476        | 0.059       |
 
 ### Example outputs
 
@@ -120,12 +120,12 @@ Evaluation is performed in (`evaluation.jpynb`) and MediQAlpaca is compared agai
 ### Notes
 
 - We can likely improve our model performance significantly if we had a larger dataset.
-- Work done here should be takes as a baseline for understanding costs and complexities of finetuning LLMs when significative resource costraints exist
+- Work done here should be taken as a baseline for understanding costs and complexities of finetuning LLMs when significative resource costraints exist
 
 ### Resources
 
 - [alpaca-lora](https://github.com/tloen/alpaca-lora), code for finetuning llama based models using LoRA
-- [Colab_For_Alpca_Lora](https://github.com/TianyiPeng/Colab_for_Alpaca_Lora), code for finetuning llama based models using colab
+- [Colab_For_Alpaca_Lora](https://github.com/TianyiPeng/Colab_for_Alpaca_Lora), code for finetuning llama based models using colab
 - [PubMedQA](https://github.com/pubmedqa/pubmedqa)
 - [alpaca-native](<https://huggingface.co/chavinlo/alpaca-native>) a replication using the original Alpaca code
 
